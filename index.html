@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Kick out the bad things - BCX</title>
+
+    <meta name="description"
+          content="KICK OUT THE  BAD THINGS - Get on the ship and help me to kick out the bad things"/>
+
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link rel="shortcut icon" href="assets/site_internet_vaisseau.png" type="image/x-icon">
+    <link rel="icon" href="assets/site_internet_vaisseau.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylesheet.min.css?v=0.0.9">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta property="og:title" content="Kick out the bad things"/>
+    <meta property="og:site_name" content="Kick out the bad things"/>
+    <meta property="og:locale" content="fr_FR"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description"
+          content="KICK OUT THE  BAD THINGS - Get on the ship and help me to kick out the bad things"/>
+    <meta property="og:url" content="https://kickouthebadthings.com"/>
+    <meta property="og:image" content="https://kickouthebadthings.com/assets/site_internet_vaisseau.large.png"/>
+</head>
+<body class="full-page">
+
+<div class="home-page" id="home-page">
+    <h1><span class="first-title">KICK OUT</span> <br/>
+        <span class="midle-title">THE</span>
+        <span class="last-title">&nbsp;BAD THINGS</span>
+    </h1>
+    <h2 class="sub-title">Get on the ship and help me<br/> to kick out the bad things</h2>
+
+    <div class="button-start" onclick="launchGame()">START</div>
+
+    <img src="assets/BCX_Logo_Black.png" alt="bcx logo" class="logo-bcx"/>
+</div>
+
+<div class="win-page hide" id="win-page">
+    <p class="score">SCORE : <span id="score"></span></p>
+    <p class="thanks">Thank you for helping me <br/> to kick out the bad things!!</p>
+    <p class="enjoy-day">Now you can enjoy your day :)</p>
+
+    <div class="button-start-again" onclick="launchGame()">PLAY AGAIN</div>
+
+    <p class="new-song">You can hear my new song<br/> "Bad Things" here : <a href="https://youtu.be/zo4zFeqNdXw">My song</a></p>
+
+    <img src="assets/BCX_Logo_Black.png" alt="bcx logo" class="logo-bcx"/>
+</div>
+
+<div class="loose-page hide" id="lose-page">
+    <p class="loose">You loose :(</p>
+
+    <div class="button-start-again" onclick="launchGame()">PLAY AGAIN</div>
+
+    <img src="assets/BCX_Logo_Black.png" alt="bcx logo" class="logo-bcx"/>
+</div>
+
+<div class="game" id="game">
+
+</div>
+
+<div id="commande-mobile" class="commande-mobile hide">
+    <div class="all-arrow">
+        <div id="arrow-left" class="arrow">
+            <span class="triangle-left"></span>
+        </div>
+        <div id="arrow-right" class="arrow">
+            <span class="triangle-right"></span>
+        </div>
+    </div>
+    <div id="shout" class="shout">
+        <div class="square"></div>
+    </div>
+</div>
+
+<script src="js/sprite.min.js?v=0.0.9"></script>
+<script src="js/game.min.js?v=0.0.9"></script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Kick out the bad things",
+        "image": "https://kickouthebadthings.com/assets/site_internet_vaisseau.png",
+        "startDate": "2020-05-13",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": "https://youtu.be/zo4zFeqNdXw"
+        },
+        "performer": {
+            "@type": "MusicGroup",
+            "name": "BCX"
+        }
+    }
+</script>
+</body>
+</html>
